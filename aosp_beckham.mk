@@ -28,8 +28,8 @@ $(call inherit-product, device/motorola/beckham/device.mk)
 # Inherit some common Pixel Experience stuff.
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
 
 # A/B updater
 AB_OTA_POSTINSTALL_CONFIG += \
