@@ -600,5 +600,7 @@ vendor/bin/charge_only_mode
 # Sensors
 vendor/lib/libiio.so
 vendor/lib/sensors.iio.so
+vendor/lib/sensors.ssc.so
 vendor/lib64/libiio.so
 vendor/lib64/sensors.iio.so
+vendor/lib64/sensors.ssc.so
