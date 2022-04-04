@@ -502,6 +502,9 @@ system/priv-app/MotCamera2/lib/arm64/libyuv.so
 system/priv-app/MotCamera2/lib/arm64/libzx-barcode.so
 system/priv-app/MotCamera2/lib/arm64/libzxing-core.so
 
+# Camera - MotCamera2
+-system/priv-app/MotorolaSettingsProvider/MotorolaSettingsProvider.apk
+
 # Display calib
 vendor/etc/qdcm_calib_data_mipi_mot_cmd_smd_1080p_601.xml
 vendor/etc/qdcm_calib_data_mipi_mot_cmd_tianma_1080p_601.xml
