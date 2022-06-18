@@ -1,33 +1,25 @@
-# TWRP Device configuration for Motorola Moto X4 (payton)
+# TWRP Device configuration for Motorola Moto Z3 Play
 
-Copyright 2018 - The OmniROM Project
-Copyright 2022 - The TeamWin Recovery Project
-
-For building TWRP for Motorola Moto X4 ONLY.
-
-### Kernel Source
-https://github.com/moto-SDM660/android_kernel_motorola_sdm660/tree/twrp-11
-
-### Device specifications
-=====================================
+## Device specifications
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Octa-core (8x2.21 GHz Cortex A53)
-CHIPSET | Qualcomm SDM630 Snapdragon 630
-GPU     | Adreno 508
-Memory  | 3, 4, 6 GB
-Shipped Android Version | 7.1.1 (Nougat)
-Storage | 32, 64GB
+CPU     | Octa-core 1.8 GHz Kryo 260
+CHIPSET | Qualcomm SDM636 Snapdragon 636
+GPU     | Adreno 509
+Memory  | 4GB
+Shipped Android Version | 8.1 (Oreo)
+Storage | 64GB
 Battery | 3000 mAh
-Dimensions | 148.4 x 73.4 x 8 mm
-Display | 1080 x 1920 pixels, 5.2" LTPS IPS LCD
-Rear Camera  | Dual 12 MP
-Front Camera | 8 MP
+Dimensions | 156.5 x 76.5 x 6.75 mm
+Display | 1080 x 2160 pixels, 6.0" Super AMOLED
+Rear Camera  | 12 MP (f/1.7) + 5 MP (f/2.2), (PDAF, dual pixel)
+Front Camera | 8 MP (f/2.2)
 
-<p align="center">
-<img height="600" src="https://i.imgur.com/pEEUbfS.png" title="Motorola Moto X4 (payton)"/>
-</p>
+![Device Picture](https://i-cdn.phonearena.com//images/phones/72220-xlarge/Motorola-Moto-Z3-Play-8.jpg)
+
+### Kernel Source
+https://github.com/moto-SDM660/android_kernel_motorola_sdm660/tree/twrp-11
 
 ## Compile
 
@@ -47,7 +39,7 @@ Then add to a local manifest (if you don't have .repo/local_manifest then make t
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project name="osm0sis/twrp_abtemplate" path="bootable/recovery/installer" remote="github" revision="master"/>
-  <project name="android_device_motorola_payton" path="device/motorola/payton" remote="TeamWin" revision="android-11"/>
+  <project name="android_device_motorola_beckham" path="device/motorola/beckham" remote="TeamWin" revision="android-11"/>
 </manifest>
 ```
 
@@ -65,6 +57,28 @@ Finally execute these:
 . build/envsetup.sh
 export ALLOW_MISSING_DEPENDENCIES=true
 export LC_ALL=C
-lunch twrp_payton-eng
+lunch twrp_beckham-eng
 make adbd bootimage
+
 ```
+### Copyright
+ ```
+  /*
+  *  Copyright (C) 2013-17 The OmniROM Project
+  *  Copyright 2022 - The TeamWin Recovery Project
+  *
+  * This program is free software: you can redistribute it and/or modify
+  * it under the terms of the GNU General Public License as published by
+  * the Free Software Foundation, either version 3 of the License, or
+  * (at your option) any later version.
+  *
+  * This program is distributed in the hope that it will be useful,
+  * but WITHOUT ANY WARRANTY; without even the implied warranty of
+  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  * GNU General Public License for more details.
+  *
+  * You should have received a copy of the GNU General Public License
+  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  *
+  */
+  ```
